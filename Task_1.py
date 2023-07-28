@@ -17,6 +17,7 @@ class TriangleChecker:
                 self.a = a
                 self.b = b
                 self.c = c
+            self.get_check_triangle()
         except ValueError:
             print('С отрицательными числами ничего не выйдет!')
 
@@ -29,5 +30,4 @@ class TriangleChecker:
                 print('Жаль, но из этого треугольник не сделать.')
 
 
-d = TriangleChecker(0, 3, 6)
-d.get_check_triangle()
+d = TriangleChecker(-3, 3, 6)
